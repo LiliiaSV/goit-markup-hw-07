@@ -994,6 +994,12 @@ footer{
     .feature-list .item:nth-child(-n+2){
         margin-bottom: 72px;
     }
+    .features .feature{
+        text-align: start;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11; 
+    }
     /* Секція послуг компанії */
     .work{
         display: none;
