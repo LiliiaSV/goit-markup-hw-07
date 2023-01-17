@@ -34,6 +34,13 @@ img {
     padding: 0;
     list-style: none;
 }
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
 /* Лого Хедера */
 .logo{
     margin: 0;
@@ -625,6 +632,12 @@ footer{
         pointer-events: auto;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+    .container-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height:100%
+    }
     .close-icon{
         position: absolute;
         top: 50%;
@@ -908,6 +921,10 @@ footer{
     }
     /* Контакти в Хедері */
     .contacts .link{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.04em;
         color: var(--text-color);
         text-decoration: none;
     
@@ -1163,6 +1180,9 @@ footer{
     .team .item:not(:last-child){
         margin-right: 24px;
     }
+    .team-list .item:nth-child(-n+2){
+        margin-bottom: 0px;
+    }
     .position{
         margin: 0 0 12px 0;
     }
@@ -1177,12 +1197,44 @@ footer{
     .brand:not(:last-child){
         margin-right: 24px;
     }
+    .brand:nth-child(-n+3){
+        margin-bottom: 0px;
+    }
     /* Оформлення футера */
     .logo-tagline{
         display: flex;
+        /* flex-wrap: wrap; */
+        /* justify-content: space-between; */
     }
-    .logo-below{
-        margin-bottom: 16px;
+    .footer-tablet{
+        display: flex;
+        margin-left: 0px;
+        margin-right: 80px;
+        width: 592px;
+    }
+    .social-media{
+        /* text-align: start; */
+        margin-bottom: 0px;
+    }
+    .info{
+        margin-right: 120px;
+    }
+    .subscribe{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 453px;
+    }
+    .title-subscribe{
+        text-align: start;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    .input-email{
+        margin-bottom: 0px;
+        margin-right: 24px;
+        width: 264px;
     }
 }
 
